@@ -23,7 +23,7 @@ async fn main() {
 	// get the database
 	// TODO - loop until valid DB
 	let db = init_db().await.expect("Cannot init db");
-	let db = Arc::new(db);
+	let db = Arc::new(db);   // can be passed to other module
 
 	// start the server
 	match start_web(&web_folder, web_port, db).await {
