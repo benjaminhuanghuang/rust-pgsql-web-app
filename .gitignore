@@ -3,3 +3,7 @@
 target/
 
 credentials.rs
+
+package-lock.json
+
+node_modules/
